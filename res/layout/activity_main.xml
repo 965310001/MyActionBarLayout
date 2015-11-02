@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.example.myactionbar"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myactionbar.MainActivity" >
+
+    <com.example.myactionbar.MyActionBar 
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        custom:title="我的标题"
+        custom:titleTextSize="6sp"
+        custom:titleTextColor="#123412"
+        custom:leftTextColor="#123412"
+        custom:leftText="返回"
+         custom:rightTextColor="#123412"
+        custom:rightText="更多"
+        custom:actionbarBackground="@drawable/title_bar"
+        >
+        
+    </com.example.myactionbar.MyActionBar>
+
+</RelativeLayout>
