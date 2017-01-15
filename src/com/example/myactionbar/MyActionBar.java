@@ -1,6 +1,5 @@
 package com.example.myactionbar;
 
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
@@ -59,7 +58,7 @@ public class MyActionBar extends RelativeLayout {
 		
 		title = typedArray.getString(R.styleable.MyActionBar_title);
 		titleTextColor = typedArray.getColor(R.styleable.MyActionBar_titleTextColor, 0);
-		titleTextSize = typedArray.getDimension(R.styleable.MyActionBar_titleTextSize, 0);
+		titleTextSize = typedArray.getDimension(R.styleable.MyActionBar_titleTextSize, 14);
 		
 		actionBarBackground = typedArray.getDrawable(R.styleable.MyActionBar_actionbarBackground);
 		typedArray.recycle();//回收此变量，节约资源，避免由于缓存导致的其他问题

@@ -1,25 +1,22 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"   
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res/com.example.myactionbar"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-     >
+    android:layout_height="wrap_content" >
 
-    <!-- 引用我们自定义的actionbar，要添加上完整的包名,下面以custom开头的就是我们自定义的属性-->
-    <com.example.myactionbar.MyActionBar 
+    <!-- 引用我们自定义的actionbar，要添加上完整的包名,下面以custom开头的就是我们自定义的属性 -->
+
+    <com.example.myactionbar.MyActionBar
         android:id="@+id/actionbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        custom:title="我的标题"
-        custom:titleTextSize="6sp"
-        custom:titleTextColor="#123412"
-        custom:leftTextColor="#123412"
-        custom:leftText="返回"
-         custom:rightTextColor="#123412"
-        custom:rightText="更多"
         custom:actionbarBackground="@drawable/common_btn_all"
-        >
-        
-    </com.example.myactionbar.MyActionBar>
+        custom:leftText="返回"
+        custom:leftTextColor="#123412"
+        custom:rightText="更多"
+        custom:rightTextColor="#123412"
+        custom:title="我的标题"
+        custom:titleTextColor="#123412" />
+
 
 </LinearLayout>
